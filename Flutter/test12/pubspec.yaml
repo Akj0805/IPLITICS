@@ -1,0 +1,443 @@
+name: test12
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  carousel_pro: ^1.0.0
+  google_fonts: ^2.1.1
+  url_launcher: ^6.1.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "images/logoapp.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "images/logoapp.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "images/logoapp.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "images/logoapp.png"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/home.png
+    - images/more.png
+    - images/live.png
+    - images/outcome.png
+    - images/analysis.png
+    - images/abs.png
+    - images/cs.png
+    - images/tms.png
+    - images/image1.png
+    - images/image2.png
+    - images/image4.png
+    - images/image7.png
+    - images/image55.png
+    - images/image10.png
+    - images/image11.png
+    - images/image12.png
+    - images/image13.png
+    - images/image14.png
+    - images/livess.png
+    - images/battle.png
+    - images/hurlers.png
+    - images/bb.png
+    - images/image106.png
+    - images/image105.png
+    - images/image103.png
+    - images/image1042.png
+    - images/image107.png
+    - images/image28.png
+    - images/image283.png
+    - images/image801.png
+    - images/devon.jpg
+    - images/moeen.jpg
+    - images/ben.jpg
+    - images/ambati.jpg
+    - images/ravindra.webp
+    - images/dhoni.jpg
+    - images/shivam.jpg
+    - images/rahane.jpg
+    - images/dwayne.jpg
+    - images/dwaine.jpg
+    - images/shreyas.jpg
+    - images/nitish.jpg
+    - images/iyer.jpg
+    - images/sunil.jpg
+    - images/umesh.jpg
+    - images/andre.jpg
+    - images/harshit.jpg
+    - images/jagadessan.jpg
+    - images/david.webp
+    - images/anukul.jpg
+    - images/rohit.webp
+    - images/ishan.jpg
+    - images/tim.jpg
+    - images/hrithik.jpg
+    - images/jofra.jpg
+    - images/piyush.jpg
+    - images/kartikeya.jpg
+    - images/trishan.jpg
+    - images/ramandeep.jpg
+    - images/tilak.jpg
+    - images/vishnu.jpg
+    - images/rishabh.jpg
+    - images/prithvi.jpg
+    - images/axar.jpg
+    - images/mitchell.jpg
+    - images/praveen.jpg
+    - images/lalit.jpg
+    - images/kuldeep.jpg
+    - images/david.jpg
+    - images/sarfaraz khan.jpg
+    - images/ripal.jpg
+    - images/rovman.jpg
+    - images/virat.jpg
+    - images/glenn.jpg
+    - images/mahipal.jpg
+    - images/harshal.jpg
+    - images/david1.jpg
+    - images/suyash.jpg
+    - images/mohammed siraj.jpg
+    - images/wanindu.jpg
+    - images/csk1.jpg
+    - images/kkr.jpg
+    - images/mi.jpg
+    - images/dc.jpg
+    - images/rcb.jpg
+    - images/pbks.png
+    - images/lsg.jpg
+    - images/gt.jpg
+    - images/rr.png
+    - images/srh.png
+    - images/jitesh.png
+    - images/prabh.png
+    - images/liam.png
+    - images/shahrukh.png
+    - images/rishi.png
+    - images/arshdeep.png
+    - images/kagiso.png
+    - images/nathan.png
+    - images/kl.png
+    - images/manan.png
+    - images/quinton.png
+    - images/nicholas.png
+    - images/ayush.png
+    - images/deepka.png
+    - images/krishn.png
+    - images/karan.png
+    - images/krunal.png
+    - images/marcus.png
+    - images/romario.png
+    - images/david.png
+    - images/shubman.png
+    - images/wade.png
+    - images/saha.png
+    - images/bharat.png
+    - images/hardik.png
+    - images/manohar.png
+    - images/sai.png
+    - images/odean.png
+    - images/jayant.png
+    - images/pradeep.png
+    - images/sanju.png
+    - images/devdutt.png
+    - images/buttler.png
+    - images/shimron.png
+    - images/jaiswal.png
+    - images/parag.png
+    - images/ashwin.png
+    - images/holder.png
+    - images/cariappa.png
+    - images/kuldip.png
+    - images/navdeep.png
+    - images/samad.png
+    - images/aiden.png
+    - images/rahul.png
+    - images/gp.png
+    - images/mg.png
+    - images/hk.png
+    - images/as.png
+    - images/abhishek.png
+    - images/jansen.png
+    - images/sunder.png
+    - images/bhuvneshwar.png
+    - images/bhanuka.png
+    - images/jonny.png
+    - images/ruturaj.jpg
+    - images/rinku.jpg
+    - images/faf du plessis.jpg
+    - images/wayne.jpg
+    - images/anuj.jpg
+    - images/shikhar.jpg
+    - images/dcteam.webp
+    - images/kkrteam.webp
+    - images/rcbteam.webp
+    - images/miteam.webp
+    - images/rrteam.webp
+    - images/kkricon.png
+    - images/miicon.png
+    - images/cskicon.png
+    - images/dcicon.png
+    - images/rcbicon.png
+    - images/rricon1.png
+    - images/MAYANK AGARWAL.jpg
+    - images/BHANUKA RAJPAKSA.jpg
+    - images/LIAM LIVESTONE.jpg
+    - images/RAJA BAWA.jpg
+    - images/SHARUKH KHAN.jpg
+    - images/ODEAN SMITH.jpg
+    - images/SANDEEP SHARMA.jpg
+    - images/ARSHDEEP SINGH.jpg
+    - images/RAHUL CHAHAR.jpg
+    - images/HARSPREET BRAR.jpg
+    - images/KL RAHUL.jpg
+    - images/QUINTON DE KOCK.jpg
+    - images/evin lewis.jpg
+    - images/MANISH PANDEY.jpg
+    - images/DEEPAK HOODA.jpg
+    - images/AYUSH BADONI.jpg
+    - images/KRUNAL PANDY.jpg
+    - images/DUSHMANTHA CHAMEERA.jpg
+    - images/AVESH KHAN.jpg
+    - images/MOHSIN KHAN.jpg
+    - images/RAVI BISHNOI.jpg
+    - images/shubham gill.png
+    - images/mathew wade.png
+    - images/vijay shankar.png
+    - images/hardik pandeya.png
+    - images/david miller.png
+    - images/rahul tewatia.png
+    - images/abhinav manohar.png
+    - images/mohammad shami.png
+    - images/varun aron.jpg
+    - images/lockie fergnson.jpg
+    - images/rashid khan.png
+    - images/jos buttler.png
+    - images/yashvi jaiswal.png
+    - images/sanju sampson.png
+    - images/devsutt padikkal.png
+    - images/shivron hetmyer.png
+    - images/riyan parag.png
+    - images/nathan coulter nile.jpg
+    - images/trent boult.png
+    - images/prashidh krishna.jpg
+    - images/ravichandran ashwin.png
+    - images/yuvendra chahal.png
+    - images/kane williamson.jpg
+    - images/abhishek sharma.png
+    - images/rahul tripathi.png
+    - images/nicholas pooran.jpg
+    - images/aiden markram.png
+    - images/abdul samd.png
+    - images/romario shepherd.jpg
+    - images/washington sundar.png
+    - images/bhuvneshwar kumar.png
+    - images/umar malik.png
+    - images/TusharDeshpande.png
+    - images/AdamMilne.jpeg
+    - images/MitchellSantner.png
+    - images/DwayneBravo.png
+    - images/ShivamDube.png
+    - images/Ravindrajadeja.png
+    - images/MukeshChoudhary.png
+    - images/MoeenAli.png
+    - images/DwainePretorius.png
+    - images/chrisJordan.png
+    - images/ShardulThakur.png
+    - images/KhaleelAhmed.png
+    - images/AxarPatel.png
+    - images/KamleshNagarkoti.png
+    - images/KuldeepYadav.png
+    - images/MustafizurRahman.png
+    - images/AnrichNortje.png
+    - images/LalitYadav.png
+    - images/ChetanSakariya.png
+    - images/MitchellMarsh.png
+    - images/RovmanPowell.png
+    - images/DanielSams.jpg
+    - images/JaspritBumrah.png
+    - images/BasilThampi.png
+    - images/MuruganAshwin.jpg
+    - images/TymalMills.png
+    - images/KieronPollard.png
+    - images/HrithikShokeen.png
+    - images/TilakVarma.png
+    - images/DewaldBrevis.png
+    - images/HarshitRana.png
+    - images/UmeshYadav.png
+    - images/ShivamMavi.png
+    - images/VarunChakaravarthy.png
+    - images/SunilNarine.png
+    - images/AndreRussell.png
+    - images/TimSouthee.png
+    - images/VenkateshIyer.png
+    - images/RasikhSalam.jpg
+    - images/PatCummins.png
+    - images/AmanHakimKhan.png
+    - images/DavidWilley.png
+    - images/MohammedSiraj.png
+    - images/ShahbazAhmed.png
+    - images/AkashDeep.png
+    - images/HarshalPatel.png
+    - images/WaninduHasaranga.png
+    - images/JoshHazlewood.png
+    - images/GlennMaxwell.png
+    - images/MahipalLomror.png
+    - images/SiddharthKaul.png
+    - images/YuzvendraChahal.png
+    - images/CSK.png
+    - images/RCB.jpg
+    - images/DC.jpg
+    - images/GT.png
+    - images/LSG.jpg
+    - images/KKR.png
+    - images/RR.jpg
+    - images/PBKS.jpg
+    - images/MI.png
+    - images/SRH.jpg
+    - images/Virat Kohli.png
+    - images/Shikhar Dhawan.png
+    - images/rohith_11.png
+    - images/kl rahul_11.png
+    - images/dinesh karthik_11.png
+    - images/MaheeshTheekshana.png
+    - images/MuruganAshwin.jpg
+    - images/jaayadevunadkat.jpg
+    - images/FabianAllen.png
+    - images/SiddharthKaul.png
+    - images/CSK1.png
+    - images/rcb1.webp
+    - images/lucknow.webp
+    - images/arrow.png
+    - images/ridit.png
+    - images/akj.png
+    - images/ashi.png
+    - images/priyansh.png
+    - images/lavanya.png
+    - images/akshat.png
+    - images/runishka.png
+    - images/vishav.png
+    - images/prashant.png
+    - images/aditi.png
+    - images/imageipl.png
+    - images/image1111.png
+    - images/image121.png
+    - images/imageaa.png
+    - images/contactbats.png
+    - images/phone.png
+    - images/insta.png
+    - images/facebook.png
+    - images/twitter.png
+    - images/office.png
+    - images/robin.jpg
+    - images/mandeep.jpg
+    - images/alzarri.webp
+    - images/vaibhav arora.webp
+    - images/Sean Abbott.jpg
+    - images/Kartik Tyagi.jpg
+    - images/dk3.png
+    - images/Rohit_Sharma.png
+    - images/hurl.png
+    - images/home1.png
+    - images/bb1.png
+    - images/battle1.png
+    - images/home2.png
+    - images/live1.png
+    - images/t natranjan.png
+    - images/rcb3.avif
+    - images/rcb4.webp
+    - images/rcb5.png
+    - images/rcb6.webp
+    - images/logoapp.png
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
